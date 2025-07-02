@@ -1,0 +1,217 @@
+/* Container */
+.ticketing-app-container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* Headings */
+.heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Ticket row */
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ticket-label {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.ticket-input {
+  width: 60px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Separator */
+.separator {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Totals */
+.total {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.proceed-btn {
+  background-color: #2563eb; /* blue */
+  color: white;
+}
+
+.proceed-btn:hover:not(.disabled) {
+  background-color: #1e40af;
+}
+
+.confirm-btn {
+  background-color: #16a34a; /* green */
+  color: white;
+  width: 48%;
+}
+
+.confirm-btn:hover:not(.disabled) {
+  background-color: #14532d;
+}
+
+.back-btn {
+  background-color: #6b7280; /* gray */
+  color: white;
+  width: 48%;
+}
+
+.back-btn:hover {
+  background-color: #4b5563;
+}
+
+/* Disabled buttons */
+.disabled {
+  background-color: #9ca3af !important;
+  cursor: not-allowed;
+}
+
+/* Form labels and inputs */
+.form-label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+/* Button group (back & confirm buttons) */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Confirmation text */
+.confirmation-text {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Ticket summary list */
+.ticket-summary-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Total paid */
+.total-paid {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+
+.instruction {
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive adjustments */
+
+/* For tablets and below (768px) */
+@media (max-width: 768px) {
+  .ticketing-app-container {
+    max-width: 90%; /* more flexible width */
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .ticket-row {
+    flex-wrap: wrap; /* allow wrapping */
+  }
+
+  .ticket-label {
+    flex: 1 1 100%; /* full width label */
+    margin-bottom: 6px;
+  }
+
+  .ticket-input {
+    width: 100%; /* full width input */
+    max-width: 120px; /* but don’t get too wide */
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .confirm-btn,
+  .back-btn {
+    width: 100%; /* buttons stack and take full width */
+  }
+}
+
+/* For small phones (480px and below) */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
+
+  .ticket-input {
+    max-width: 100%;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
